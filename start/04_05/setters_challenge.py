@@ -25,7 +25,10 @@ class BankAccount:
         self._account_holder = account_holder
 
     def set_balance(self, balance):
-        pass
+        if balance >= 0:
+            self._balance = balance
+        elif balance < 0:
+            print('Error')
 
 
 # Example usage

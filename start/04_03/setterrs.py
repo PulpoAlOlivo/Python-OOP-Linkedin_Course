@@ -14,6 +14,12 @@ class BankAccount:
     def get_balance(self):
         return self._balance
 
+    # Setter Methods
+    def set_account_number(self, account_number):
+        if isinstance(account_number, str):
+            self._account_number = account_number
+        else:
+            print('Error')
 
 # Example usage
 if __name__ == "__main__":
